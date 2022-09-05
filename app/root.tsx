@@ -7,10 +7,13 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import Navbar from "./components/navbar/Navbar";
+import { GlobalStyles } from "./util/globalStyles";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  author: "abdenassar amimi",
+  title: "Abde Nassar AMIMI",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -20,9 +23,12 @@ export default function App() {
       <head>
         <Meta />
         <Links />
-      </head>
+		    { typeof document === "undefined"  ? "__STYLES__" : null } 
+     </head>
       <body>
+        <Navbar />
         <Outlet />
+        <GlobalStyles />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

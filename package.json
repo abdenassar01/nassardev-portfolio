@@ -11,7 +11,8 @@
     "@remix-run/vercel": "^1.7.0",
     "@vercel/node": "^2.4.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.7.0",
@@ -19,6 +20,7 @@
     "@remix-run/serve": "^1.7.0",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.26",
     "eslint": "^8.20.0",
     "typescript": "^4.7.4"
   },
