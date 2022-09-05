@@ -15,6 +15,8 @@ export const LogoLink = styled(Link)`
 export const Logo = styled.div`
     color:  ${ PrimaryColors["100"] }; 
     font-weight: 900;
+    width: 30px;
+    height: 30px;
     //TODO: To add Image Logo
 `
 
@@ -64,6 +66,10 @@ export const StyledNavLink = styled(NavLink)`
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    &:visited{
+        color: black;
     }
 `
 

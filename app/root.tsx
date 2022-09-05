@@ -13,7 +13,7 @@ import { GlobalStyles } from "./util/globalStyles";
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   author: "abdenassar amimi",
-  title: "Abde Nassar AMIMI",
+  title: "Abde Nassar | Personal Portfolio",
   viewport: "width=device-width,initial-scale=1",
 });
 
