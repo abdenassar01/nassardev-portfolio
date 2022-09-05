@@ -21,7 +21,7 @@ export const Logo = styled.div`
 `
 
 export const Nav = styled.nav`
-    
+    padding-top: 10px;
 `
 
 export const LinksList = styled.ul`
@@ -49,6 +49,7 @@ export const StyledNavLink = styled(NavLink)`
             border-radius: 50px;
             background: linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);;
             height: 3px;
+            width: 120%;
             animation: slide .3s forwards;
         }
         @keyframes slide {
