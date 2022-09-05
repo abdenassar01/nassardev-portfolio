@@ -37,7 +37,33 @@ export const StyledNavLink = styled(NavLink)`
     font-weight: 500;
     
     &[aria-current="page"] {
-        color: green;
+        background: -webkit-linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &::after{
+            content: "";
+            display: block;
+            border-radius: 50px;
+            background: linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);;
+            height: 3px;
+            animation: slide .3s forwards;
+        }
+        @keyframes slide {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 120%;
+            }
+        }
+    }
+
+    &:hover{
+        background: -webkit-linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 `
 
