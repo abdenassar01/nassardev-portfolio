@@ -1,11 +1,15 @@
-import { MainTitle } from "~/util"
+import {  MainTitle } from "~/util"
+import { Section, P } from "./styles/Styles"
 
 function Greeting() {
   return (
-    <section>
+    <Section>
         Hi 👋 I'm
-        <MainTitle>Hey My name is abde nassar</MainTitle>
-    </section>
+        <MainTitle>Abdenassar Amimi</MainTitle>
+        <P>
+          I’m a full stack developer from morocco  who is passionate about using technology to empower people.
+        </P>
+    </Section>
   )
 }
 
