@@ -1,6 +1,6 @@
 import { Link, NavLink } from "@remix-run/react";
 import styled from "styled-components";
-import { PrimaryColors } from "~/util/colors";
+import { PrimaryColors } from "~/util";
 
 export const NavbarWrapper = styled.header`
     display: flex;

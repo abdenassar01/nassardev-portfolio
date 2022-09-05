@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.main`
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 50px;
+    justify-content: space-around;
     margin-top: 50px;
 `

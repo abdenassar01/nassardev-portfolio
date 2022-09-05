@@ -1,9 +1,11 @@
+import { MainTitle } from "~/util"
+
 function Greeting() {
   return (
-    <div>
-        Greeting
-        <h1>Hey My name is abde nassar</h1>
-    </div>
+    <section>
+        Hi 👋 I'm
+        <MainTitle>Hey My name is abde nassar</MainTitle>
+    </section>
   )
 }
 
