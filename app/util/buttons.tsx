@@ -10,6 +10,10 @@ export const Button = styled(Link)`
     &:visited{
         color: ${ props => props.color ? props.color : "black" };
     }
+
+    @media screen  and (max-width: 667px){
+        font-size: 14px;
+    }
 `
 
 export const PrimaryButton = styled(Button)`
