@@ -17,7 +17,6 @@ export const Button = styled(Link)`
 `
 
 export const PrimaryButton = styled(Button)`
-    color: white;
     background: linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
     border-radius: 50px;
     font-weight: bold;
@@ -51,7 +50,7 @@ export const SecondaryButton = styled(Button)`
             content: "";
             display: block;
             border-radius: 50px;
-            background: linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);;
+            background: linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
             height: 3px;
             animation: slide .3s forwards;
         }
