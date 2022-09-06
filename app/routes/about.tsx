@@ -1,11 +1,8 @@
-import { PrimaryButton, SecondaryButton } from "~/util"
+import { Outlet } from "@remix-run/react"
 
 function about() {
   return (
-    <div>
-      <PrimaryButton color="white" to="/ggs">Primary</PrimaryButton>
-      <SecondaryButton to="/">go back home</SecondaryButton>
-    </div>
+    <Outlet />
   )
 }
 
