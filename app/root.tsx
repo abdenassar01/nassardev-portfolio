@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import { GlobalStyles } from "./util/globalStyles";
 
@@ -31,6 +32,7 @@ export default function App() {
       <body>
         <Navbar />
         <Outlet />
+        <Footer />
         <GlobalStyles />
         <ScrollRestoration />
         <Scripts />
