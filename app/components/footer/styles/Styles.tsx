@@ -6,6 +6,7 @@ export const FooterWrapper = styled.footer`
     padding: 0 40px;
     margin-top: -10px;
     align-items: center;
+    flex-wrap: wrap;
 `
 
 export const Left = styled.div`
@@ -27,9 +28,9 @@ export const CopyrightText = styled.div`
 `
 
 export const StyledLink = styled.a`
-    color : #01B3FF;
+    color : #7a7a7a;
 
     &:hover{
-        color : #027AFC;
+        color : ${props => props.color ? props.color : "#027AFC" };
     }
 `
