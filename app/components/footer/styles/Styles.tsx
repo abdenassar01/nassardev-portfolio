@@ -4,9 +4,15 @@ export const FooterWrapper = styled.footer`
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-    margin-top: -10px;
+    margin-top: 40px;
     align-items: center;
     flex-wrap: wrap;
+    
+    @media screen and (max-width: 667px){
+        justify-content: center; 
+        flex-direction: column; 
+        padding: 0;
+    }
 `
 
 export const Left = styled.div`
