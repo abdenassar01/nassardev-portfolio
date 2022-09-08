@@ -37,6 +37,10 @@ export const Event = styled.div`
         flex-direction: column-reverse;
         margin-top: -5px;
     }
+
+    &:last-child{
+        margin-top: -25px;
+    }
 `
 
 export const Pin = styled.div`

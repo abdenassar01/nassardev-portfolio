@@ -1,34 +1,42 @@
 import { Heading } from "../shared/Styles"
 import { Event, EventList, HelperText, Line, Paragraph, Pin, SubTitle, Text, TimelineWrapper, Wrapper } from "./styles/Styles"
 
-function Timeline() {
+type Event = {
+    dateRange?: string,
+    degree?: string,
+    title: string  
+}
+
+type Data = {
+    heading: string,
+    helperText?: string,
+    events: Event[]
+}
+
+type PropType = {
+    data: Data
+}
+
+function Timeline(props: PropType) {
   return (
     <Wrapper>
-        <Heading>Experiences</Heading>
+        <Heading>{ props?.data.heading }</Heading>
         <HelperText>
-            I am mostly self-taught, but here are some of the most relevant certifications I have achieved:
+         { props?.data.helperText }
         </HelperText>
         <TimelineWrapper>
             <Line />
             <EventList>
-                <Event >
-                    <Paragraph>High School Degree(Baccalauréat)</Paragraph>
-                    <SubTitle>Physics Science</SubTitle>
-                    <Text>2019</Text>
-                    <Pin />
-                </Event>
-                <Event>
-                    <Paragraph>High School Degree(Baccalauréat)</Paragraph>
-                    <SubTitle>Physics Science</SubTitle>
-                    <Text>2019</Text>
-                    <Pin />
-                </Event>
-                <Event >
-                    <Paragraph>High School Degree(Baccalauréat)</Paragraph>
-                    <SubTitle>Physics Science</SubTitle>
-                    <Text>2019</Text>
-                    <Pin />
-                </Event>
+                {
+                    props?.data.events.map(ele => 
+                   ( <Event >
+                        <Paragraph>{ ele?.degree }</Paragraph>
+                        <SubTitle>{ ele.title }</SubTitle>
+                        <Text>{ ele.dateRange }</Text>
+                        <Pin />
+                    </Event>)
+                    )
+                }
             </EventList>    
         </TimelineWrapper>
         
