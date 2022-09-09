@@ -10,6 +10,12 @@ type PropType = {
     events: Event[]
 }
 
+type ItemProp = {
+    avatar: string,
+    toolsName?: string,
+    disc: string
+}
+
 export const EDUCATION: PropType = {
     heading: "Education",
     helperText: "I am mostly self-taught, but here are some of the most relevant certifications I have achieved",
@@ -49,3 +55,11 @@ export const EXPERIENCES: PropType = {
         }, 
     ]
 }
+
+export const TOOLS: ItemProp[] = [
+    {
+        avatar: "string",
+        toolsName: "string",
+        disc: "string"
+    }
+]

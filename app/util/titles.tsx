@@ -12,5 +12,4 @@ export const MainTitle = styled.h1`
     @media screen  and (max-width: 667px){
         font-size: 20px;
     }
-
 `
