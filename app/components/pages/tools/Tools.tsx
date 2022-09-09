@@ -1,11 +1,15 @@
-import { MainTitle } from '~/util'
+import { MainTitle, SecondaryTitle } from '~/util'
 import Item from './item/Item'
-import { Wrapper } from './styles/Styles'
+import { Paragraph, Wrapper } from './styles/Styles'
 
 function Tools() {
   return (
     <Wrapper>
         <MainTitle>Tools</MainTitle>
+        <Paragraph>
+
+        </Paragraph>
+        <SecondaryTitle>IDEs and Text Editors</SecondaryTitle>
         <Item avatar='' disc='something about text' />
     </Wrapper>
   )

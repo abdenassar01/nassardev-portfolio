@@ -13,3 +13,7 @@ export const MainTitle = styled.h1`
         font-size: 20px;
     }
 `
+
+export const SecondaryTitle = styled(MainTitle)`
+    font-size: 32px;
+`
