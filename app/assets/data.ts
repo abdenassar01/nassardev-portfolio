@@ -73,3 +73,26 @@ export const TOOLS: ItemProp[] = [
         disc: "Vim - Vim is an essential tool in my tools list for editing simple scripts, configurations files and simple c labs. "
     }
 ]
+
+export const WORKFLOWS: ItemProp[] = [
+    {
+        avatar: "https://i.imgur.com/UQtptYi.png",
+        toolsName: "figma",
+        disc: "Figma - I use figma to create the ui/ux wireframing and prototyping before moving to code.  "
+    },
+    {
+        avatar: "https://i.imgur.com/DBmPjyV.jpeg",
+        toolsName: "Drawio",
+        disc: "Drawio - Sometimes I need to create some diagrams and this is the right tool for that.  "
+    },
+    {
+        avatar: "https://i.imgur.com/MDjXc0T.png",
+        toolsName: "Notion",
+        disc: "Notion - The best Note taking and managing workflow app, I try to use it for managing everything.  "
+    },
+    {
+        avatar: "https://i.imgur.com/cUToVuh.png",
+        toolsName: "Git",
+        disc: "Git - The default version control tool. I use it along with github to manage my projects. "
+    }
+]

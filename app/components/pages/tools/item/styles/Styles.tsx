@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ItemWrapper = styled.div`
     display: flex;
     justify-content: start;
-    gap: 5px;   
+    gap: 10px;   
     align-items: center;
     padding: 5px;
 `
