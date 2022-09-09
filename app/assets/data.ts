@@ -58,8 +58,18 @@ export const EXPERIENCES: PropType = {
 
 export const TOOLS: ItemProp[] = [
     {
-        avatar: "string",
-        toolsName: "string",
-        disc: "string"
+        avatar: "https://i.imgur.com/4vegS9z.jpg",
+        toolsName: "intellij idea",
+        disc: "IntelliJ - I use this fully fanctional ide for java developement(Spring boot, jakarta ee...). "
+    },
+    {
+        avatar: "https://i.imgur.com/YUUYsiX.png",
+        toolsName: "VS Code",
+        disc: "VS Code - I use visual studio editor for writing javascript/Typescript code(React, React Native, Remix). "
+    },
+    {
+        avatar: "https://i.imgur.com/dAJliqz.png",
+        toolsName: "Vim",
+        disc: "Vim - Vim is an essential tool in my tools list for editing simple scripts, configurations files and simple c labs. "
     }
 ]

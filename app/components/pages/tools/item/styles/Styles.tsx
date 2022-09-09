@@ -5,10 +5,11 @@ export const ItemWrapper = styled.div`
     justify-content: start;
     gap: 5px;   
     align-items: center;
+    padding: 5px;
 `
 
 export const Avatar = styled.img`
-    width: 40px;
+    width: 35px;
     height: auto;
 `
 
