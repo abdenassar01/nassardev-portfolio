@@ -6,5 +6,5 @@ export const Wrapper = styled.main`
 `
 
 export const Paragraph = styled.p`
-    
+    padding: 20px;
 `
