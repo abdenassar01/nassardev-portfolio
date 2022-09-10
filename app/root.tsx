@@ -9,6 +9,7 @@ import {
 } from "@remix-run/react";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import Error from "./components/pages/error/Error";
 import { GlobalStyles } from "./util/globalStyles";
 
 export const meta: MetaFunction = () => ({
@@ -41,3 +42,28 @@ export default function App() {
     </html>
   );
 }
+
+export function CatchBoundary(){
+  return (
+    <html lang="en">
+      <head>
+        <Meta />
+        <Links />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		    { typeof document === "undefined"  ? "__STYLES__" : null } 
+     </head>
+      <body>
+        <Navbar />
+        <Error />
+        <Footer />
+        <GlobalStyles />
+        <ScrollRestoration />
+        <Scripts />
+        <LiveReload />
+      </body>
+    </html>
+  )
+}
+

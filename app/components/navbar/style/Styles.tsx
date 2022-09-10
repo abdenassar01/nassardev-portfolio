@@ -17,7 +17,6 @@ export const Logo = styled.div`
     font-weight: 900;
     width: 30px;
     height: 30px;
-    //TODO: To add Image Logo
 `
 
 export const Nav = styled.nav`
