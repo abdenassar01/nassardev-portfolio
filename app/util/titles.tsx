@@ -12,5 +12,9 @@ export const MainTitle = styled.h1`
     @media screen  and (max-width: 667px){
         font-size: 20px;
     }
+`
 
+export const SecondaryTitle = styled(MainTitle)`
+    font-size: 24px;
+    margin: 10px 0;
 `

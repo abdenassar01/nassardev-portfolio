@@ -1,8 +1,8 @@
+import { Outlet } from "@remix-run/react";
+
 function tools() {
   return (
-    <div>
-        tools
-    </div>
+    <Outlet />
   )
 }
 

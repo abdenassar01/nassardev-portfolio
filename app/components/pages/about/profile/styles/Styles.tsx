@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { PrimaryColors } from "~/util";
 
 export const Section = styled.section`
-    margin-top: 50px;
+
 `
 
 export const Header = styled.div`

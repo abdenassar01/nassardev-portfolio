@@ -29,7 +29,7 @@ function Timeline(props: PropType) {
             <EventList>
                 {
                     props?.data.events.map(ele => 
-                   ( <Event >
+                   ( <Event key={ Math.random() }>
                         <Paragraph>{ ele?.degree }</Paragraph>
                         <SubTitle>{ ele.title }</SubTitle>
                         <Text>{ ele.dateRange }</Text>
