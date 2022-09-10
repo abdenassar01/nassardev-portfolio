@@ -12,7 +12,7 @@ function Navbar() {
             <LinksList>
                 {
                     ["home", "about", "projects", "tools"].map(item => (
-                        <ListItem key={ item }>
+                        <ListItem key={ Math.random() }>
                             <StyledNavLink to={ item === "home" ? "/" : item }>
                                 {item}
                             </StyledNavLink>

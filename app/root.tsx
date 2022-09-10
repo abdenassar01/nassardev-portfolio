@@ -15,7 +15,9 @@ import { GlobalStyles } from "./util/globalStyles";
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   author: "abdenassar amimi",
+  keyword: "abdenassar amimi, abde nassar amimi, abde nassar, amimi, react, developer, moroccan developer, programming, web dev, full stack developer",
   title: "Abde Nassar | Personal Portfolio",
+  discription: "Hey, my name is abdenassar amimi. I'm a 21 years old full stack developer based in morocco. I'm motivated to learn more in the programming field.", 
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -24,6 +26,7 @@ export default function App() {
     <html lang="en">
       <head>
         <Meta />
+        <title>Page Not Found 😥</title>
         <Links />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
