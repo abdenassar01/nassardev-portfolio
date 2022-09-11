@@ -16,6 +16,8 @@ export const ItemWrapper = styled.div`
 `
 
 export const TechTitle = styled.h3`
+    font-size: 16px;
+    font-weight: 700;
     background: -webkit-linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
     background-clip: text;
     -webkit-background-clip: text;

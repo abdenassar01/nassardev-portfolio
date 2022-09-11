@@ -13,10 +13,15 @@ function Item(props: ProjectProps) {
 
             <TechTitle>Tech Stack</TechTitle>
             <TechnologiesWrapper>
-                <Technology>
-                    <Avatar src="https://i.imgur.com/cWDVsJ8.png" alt="" />
-                    <TechLink href="https://remix.com" target="_blank" color="#14d3f5">React</TechLink>
-                </Technology>
+                {
+                    props.techStack?.map(tech => (
+                        <Technology>
+                            <Avatar src={ tech.avatar } alt={ tech.title } />
+                            <TechLink href={ tech.link } target="_blank" color={ tech.color }>{ tech.title }</TechLink>
+                        </Technology>
+                    ))
+                }
+                
             </TechnologiesWrapper>
         </ItemEllement>
         <Image src="https://i.imgur.com/Wx9gCVq.jpg" alt="casawe-guichet" />
