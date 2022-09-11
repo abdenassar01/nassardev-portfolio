@@ -1,7 +1,8 @@
+import { Outlet } from "@remix-run/react"
 
 function projects() {
   return (
-    <div>projects</div>
+    <Outlet />
   )
 }
 

@@ -4,10 +4,20 @@ import { PrimaryColors } from "~/util";
 export const Wrapper = styled.section`
     padding: 0 60px;
     margin-top: 40px;
+
+
+    @media screen and (max-width: 668px) {
+        padding: 0 20px;
+    }
 `
 
 export const HelperText = styled.p`
     font-size: 14px;
+
+
+    @media screen and (max-width: 668px) {
+        font-size: 12px;
+    }
 `
 
 export const TimelineWrapper = styled.div`
@@ -31,7 +41,7 @@ export const Event = styled.div`
     align-items: center;
     flex-direction: column;
     margin-top: -63px;
-
+    text-align: center;
 
     &:nth-child(2){
         flex-direction: column-reverse;
@@ -40,6 +50,10 @@ export const Event = styled.div`
 
     &:last-child{
         margin-top: -25px;
+
+        @media screen and (max-width: 769px) {
+            margin-top: -35px;
+        }
     }
 `
 
@@ -56,12 +70,23 @@ export const Text = styled.p`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
+
+    @media screen and (max-width: 668px) {
+        font-size: 13px;
+    }
 `
 
 export const SubTitle = styled.p`
     font-weight: 700;
+
+    @media screen and (max-width: 668px) {
+        font-size: 13px;
+    }
 `
 
 export const Paragraph = styled.p`
     
+    @media screen and (max-width: 668px) {
+        font-size: 11px;
+    }
 `

@@ -1,15 +1,8 @@
 import styled from "styled-components";
 
-
-export const CentredWrapper = styled.main`
-    display: flex;
-    justify-content: center;
-    min-height: 83vh;
-`
-
-export const Wrapper = styled.div`
+export const ProjectsWrapper = styled.main`
     margin-top: 50px;
-    padding: 0 40px;
+    padding: 0 60px;
 
     @media screen and (max-width: 768px) {
         padding: 0 20px;
@@ -17,9 +10,11 @@ export const Wrapper = styled.div`
 `
 
 export const Paragraph = styled.p`
-    padding: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    max-width: 700px;
 
     @media screen and (max-width: 768px) {
-        font-size: 14px;
+        font-size: 12px;
     }
 `

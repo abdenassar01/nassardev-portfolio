@@ -36,12 +36,14 @@ export const ListItem = styled.li`
 export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
     font-weight: 500;
+    color: black;
     
     &[aria-current="page"] {
         background: -webkit-linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+       
         &::after{
             content: "";
             display: block;

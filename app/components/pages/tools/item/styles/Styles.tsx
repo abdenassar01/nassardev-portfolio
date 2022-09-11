@@ -14,5 +14,7 @@ export const Avatar = styled.img`
 `
 
 export const Discription = styled.p`
-    
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
 `

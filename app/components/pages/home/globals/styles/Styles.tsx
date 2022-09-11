@@ -7,4 +7,6 @@ export const Wrapper = styled.main`
     justify-content: space-around;
     padding: 0px 50px;
     margin-top: 40px;
+
+    min-height: 75vh;
 `

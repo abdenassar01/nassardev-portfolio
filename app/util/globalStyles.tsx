@@ -12,8 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         font-style: 16px;
     }
-
-    //    
+  
     ::-webkit-scrollbar {
         width: 5px;
     }
