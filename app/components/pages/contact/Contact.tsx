@@ -11,7 +11,7 @@ function Contact() {
             </Illustration>
         </LeftSide>
         <RightSide>
-            <Form>
+            <Form method="POST">
                 <Raw>
                     <Field>
                         <Label htmlFor="name">Name: </Label>
