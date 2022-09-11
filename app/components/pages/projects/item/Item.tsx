@@ -15,7 +15,7 @@ function Item(props: ProjectProps) {
             <TechnologiesWrapper>
                 {
                     props.techStack?.map(tech => (
-                        <Technology>
+                        <Technology key={ Math.random() }>
                             <Avatar src={ tech.avatar } alt={ tech.title } />
                             <TechLink href={ tech.link } target="_blank" color={ tech.color }>{ tech.title }</TechLink>
                         </Technology>

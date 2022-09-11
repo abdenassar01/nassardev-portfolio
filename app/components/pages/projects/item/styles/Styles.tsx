@@ -10,9 +10,11 @@ export const ItemWrapper = styled.div`
     justify-content: space-between;
     border-radius: 10px;
 
-    background: linear-gradient(145deg, #f1f1f1, #ffffff);
-    box-shadow:  7px 7px 17px #d9d9d9,
-                -7px -7px 17px #ffffff;
+    background: #f1f1f1;
+
+    &:nth-child(2n){
+        flex-direction: row-reverse;
+    }
 `
 
 export const TechTitle = styled.h3`
@@ -32,7 +34,7 @@ export const ItemEllement = styled.div`
     }
 `
 
-export const ProjectTitle = styled.h3`
+export const ProjectTitle = styled.h2`
     background: -webkit-linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
     background-clip: text;
     -webkit-background-clip: text;
