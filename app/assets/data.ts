@@ -16,6 +16,21 @@ type ItemProp = {
     disc: string
 }
 
+type Tech = {
+    avatar: string,
+    title: string,
+    link?: string
+}
+
+type ProjectProps = {
+    title: string,
+    disc: string[],
+    code: string,
+    demo?: string,
+    image: string,
+    techStack: Tech,
+}
+
 export const EDUCATION: PropType = {
     heading: "Education",
     helperText: "I am mostly self-taught, but here are some of the most relevant certifications I have achieved",
@@ -94,5 +109,23 @@ export const WORKFLOWS: ItemProp[] = [
         avatar: "https://i.imgur.com/cUToVuh.png",
         toolsName: "Git",
         disc: "Git - The default version control tool. I use it along with github to manage my projects. "
+    }
+]
+
+export const PROJECTS: ProjectProps[] = [
+    {
+        title: "casawe-guichet",
+        disc: [
+            "Online ticketing platform for tickets and Sport Ticketing for sports events.",
+            "This application is part of the guichet.ma platform which is a web application and mobile application for online ticket booking."
+        ],
+        code: "https://github.com",
+        demo: "https://caswe-guichet.vercel.app",
+        image: "",
+        techStack: {
+            avatar: "",
+            title: "",
+            link: ""
+        }
     }
 ]
