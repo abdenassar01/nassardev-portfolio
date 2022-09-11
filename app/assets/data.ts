@@ -28,7 +28,7 @@ type ProjectProps = {
     code: string,
     demo?: string,
     image: string,
-    techStack: Tech,
+    techStack: Tech[],
 }
 
 export const EDUCATION: PropType = {
@@ -122,10 +122,12 @@ export const PROJECTS: ProjectProps[] = [
         code: "https://github.com",
         demo: "https://caswe-guichet.vercel.app",
         image: "",
-        techStack: {
-            avatar: "",
-            title: "",
-            link: ""
-        }
+        techStack:[ 
+            {
+                avatar: "https://i.imgur.com/cWDVsJ8.png",
+                title: "Recat",
+                link: "React.com"
+            }
+        ]
     }
 ]

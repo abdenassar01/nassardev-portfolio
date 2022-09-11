@@ -10,5 +10,11 @@ export const ProjectsWrapper = styled.main`
 `
 
 export const Paragraph = styled.p`
-    
+    margin-top: 10px;
+    font-size: 18px;
+    max-width: 700px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+    }
 `
