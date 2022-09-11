@@ -31,6 +31,16 @@ export const Input = styled.input`
     &:focus{
         outline: none;
     }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover, 
+    &:-webkit-autofill:focus, 
+    &:-webkit-autofill:active{
+        box-shadow: 0 0 0 30px #747474 inset !important;
+        -webkit-box-shadow: 0 0 0 30px #747474 inset !important;
+        -webkit-text-fill-color: white !important;
+    }
+
 `
 
 export const TextArea = styled.textarea`
