@@ -5,19 +5,29 @@ export const ContactWrapper = styled.main`
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    min-height: 75vh;
 `
 
 export const LeftSide = styled.section`
     
+    @media screen and (max-width: 667px) {
+        display: flex;
+        justify-content: center;
+        transform: scale(.9);
+    }
 `
 
 export const RightSide = styled.section`
     
+    @media screen and (max-width: 667px) {
+        width: 100%;
+    }
 `
 
 export const Illustration = styled.div`
-    
+
 `
 
 export const Form = styled.form`
@@ -29,6 +39,7 @@ export const Form = styled.form`
 export const Raw = styled.div`
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 `
 

@@ -8,6 +8,11 @@ export const Field = styled.div`
     flex-direction: column;
     border-radius: 10px;
     background-color: #747474;
+    width: 100%;
+
+    @media screen and (max-width: 667px) {
+        transform: scale(.9);
+    }
 `
 
 export const Label = styled.label`
