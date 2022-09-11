@@ -1,16 +1,15 @@
 import { Avatar, Image, ItemEllement, ItemWrapper, Paragraph, ProjectTitle, TechLink, TechnologiesWrapper, Technology, TechTitle } from "./styles/Styles"
 
-function Item() {
+import { ProjectProps } from "../../../../assets/data"
+
+function Item(props: ProjectProps) {
   return (
     <ItemWrapper>
         <ItemEllement>
-            <ProjectTitle>casawe-guichet</ProjectTitle>
-            <Paragraph>
-                Online ticketing platform for tickets and Sport Ticketing for sports events.
-            </Paragraph>
-            <Paragraph>
-                This application is part of the guichet.ma platform which is a web application and mobile application for online ticket booking.               
-            </Paragraph>
+            <ProjectTitle>{ props.title }</ProjectTitle>
+            {
+                props.disc.map( ele => <Paragraph key={ Math.random() }>{ ele }</Paragraph> )
+            }
 
             <TechTitle>Tech Stack</TechTitle>
             <TechnologiesWrapper>

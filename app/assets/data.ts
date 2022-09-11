@@ -22,7 +22,7 @@ type Tech = {
     link?: string
 }
 
-type ProjectProps = {
+export type ProjectProps = {
     title: string,
     disc: string[],
     code: string,
