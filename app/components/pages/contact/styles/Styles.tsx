@@ -7,7 +7,7 @@ export const ContactWrapper = styled.main`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 75vh;
+    min-height: 73vh;
 `
 
 export const LeftSide = styled.section`
