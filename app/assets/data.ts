@@ -23,6 +23,12 @@ type Tech = {
     link?: string
 }
 
+type ProgLang = {
+    avatar: string,
+    link: string,
+    name?: string
+}
+
 export type ProjectProps = {
     title: string,
     disc: string[],
@@ -30,6 +36,7 @@ export type ProjectProps = {
     demo?: string,
     image: string,
     techStack: Tech[],
+    prglsngs: ProgLang[]
 }
 
 export const EDUCATION: PropType = {
@@ -167,6 +174,13 @@ export const PROJECTS: ProjectProps[] = [
         image: "",
         techStack:[ 
             _react, _guichetApi
+        ],
+        prglsngs: [
+            {
+                avatar: "https://i.imgur.com/FMQhTrh.png",
+                link: "https://javascript.com",
+                name: "JavaScript"
+            }
         ]
     },
     {
@@ -180,6 +194,18 @@ export const PROJECTS: ProjectProps[] = [
         image: "",
         techStack:[ 
             _react, _springboot, _mysql
+        ],
+        prglsngs: [
+            {
+                avatar: "https://i.imgur.com/4oHqGO1.png",
+                link: "https://java.com",
+                name: "Java"
+            },
+            {
+                avatar: "https://i.imgur.com/FMQhTrh.png",
+                link: "https://javascript.com",
+                name: "JavaScript"
+            }
         ]
     },
     {
@@ -192,7 +218,14 @@ export const PROJECTS: ProjectProps[] = [
         demo: "https://caswe-guichet.vercel.app",
         image: "",
         techStack:[ 
-            _react, _quranApi
+            _remix, _quranApi
+        ],
+        prglsngs: [
+            {
+                avatar: "https://i.imgur.com/OlAGikT.png",
+                link: "https://www.typescriptlang.org/",
+                name: "TypeScript"
+            }
         ]
     },
     {
@@ -205,7 +238,14 @@ export const PROJECTS: ProjectProps[] = [
         demo: "https://caswe-guichet.vercel.app",
         image: "",
         techStack:[ 
-            _react, _quranApi
+            _remix, _quranApi
+        ],
+        prglsngs: [
+            {
+                avatar: "https://i.imgur.com/OlAGikT.png",
+                link: "https://www.typescriptlang.org/",
+                name: "TypeScript"
+            }
         ]
     }
 ]

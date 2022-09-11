@@ -1,4 +1,4 @@
-import { Avatar, Image, ItemEllement, ItemWrapper, Paragraph, ProjectTitle, TechLink, TechnologiesWrapper, Technology, TechTitle } from "./styles/Styles"
+import { Avatar, Image, ItemEllement, ItemWrapper, LanguagesWrapper, Paragraph, ProjectTitle, TechLink, TechnologiesWrapper, Technology, TechTitle } from "./styles/Styles"
 
 import { ProjectProps } from "../../../../assets/data"
 
@@ -20,9 +20,18 @@ function Item(props: ProjectProps) {
                             <TechLink href={ tech.link } target="_blank" color={ tech.color }>{ tech.title }</TechLink>
                         </Technology>
                     ))
-                }
-                
-            </TechnologiesWrapper>
+                }   
+            </TechnologiesWrapper> 
+            <TechTitle>Programming Languages</TechTitle>
+            <LanguagesWrapper>
+                {
+                    props.prglsngs?.map(lang => (
+                        <Technology key={ Math.random() }>
+                            <TechLink href={ lang.link } target="_blank" ><Avatar src={ lang.avatar } alt={ lang.name } /></TechLink>
+                        </Technology>
+                    ))
+                }    
+            </LanguagesWrapper>
         </ItemEllement>
         <Image src="https://i.imgur.com/Wx9gCVq.jpg" alt="casawe-guichet" />
     </ItemWrapper>

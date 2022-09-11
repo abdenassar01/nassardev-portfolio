@@ -64,6 +64,11 @@ export const TechnologiesWrapper = styled.div`
     
 `
 
+export const LanguagesWrapper = styled.div`
+    display: flex;
+    gap: 10px;
+`
+
 export const Technology = styled.div`
     padding: 5px 0;
     display: flex;
@@ -79,5 +84,5 @@ export const Avatar = styled.img`
 export const TechLink = styled.a`
     font-weight: bold;
     text-decoration: none;
-    color: ${ props => props.color  };
+    color: ${ props => props.color && props.color };
 `
