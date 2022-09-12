@@ -11,11 +11,11 @@ function Contact() {
             </Illustration>
         </LeftSide>
         <RightSide>
-            <Form method="POST">
+            <Form method="POST" action="/send">
                 <Raw>
                     <Field>
-                        <Label htmlFor="name">Name: </Label>
-                        <Input type="text" id="name" name="name" />
+                        <Label htmlFor="firstname">Name: </Label>
+                        <Input type="text" id="firstname" name="firstname" />
                     </Field>                    
                     <Field>
                         <Label htmlFor="lastname">Lastname: </Label>
