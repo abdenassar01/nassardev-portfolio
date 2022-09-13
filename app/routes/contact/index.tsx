@@ -1,3 +1,4 @@
+import { MetaFunction } from "@remix-run/node";
 import Contact from "~/components/pages/contact/Contact";
 
 function index() {
@@ -8,7 +9,8 @@ function index() {
 
 export default index
 
-export async function action({ request }: any) {
-  const body = await request.formData();
-  console.log(body)
-}
+export const meta: MetaFunction = () => ({
+  keyword: "abdenassar amimi, abde nassar amimi, developer, developement informatique, web developer, portfolio",
+  title: "Abde Nassar | Contact Page",
+  discription: "You can contact abdenassar amimi directly throught this page.", 
+});

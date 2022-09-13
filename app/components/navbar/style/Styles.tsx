@@ -94,11 +94,11 @@ export const StyledNavLink = styled(NavLink)`
 
 export const ContactLink = styled(Link)`
     text-decoration: none;
-    color:  ${ PrimaryColors["200"] } ; //TODO: Refactor to match the dark/light Theme
+    color:  ${ PrimaryColors["200"] }; 
     font-weight: 500;
     padding: 5px 20px;
     border-radius: 50px;
-    border: 2px solid ${ PrimaryColors["200"] } ;
+    border: 2px solid ${ PrimaryColors["200"] };
 
     @media screen and (max-width: 767px) {
         width: fit-content;
