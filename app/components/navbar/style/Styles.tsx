@@ -120,16 +120,7 @@ export const ExtendedMenu = styled.div`
     left: 0;
     top: 50px;
     background-color: #000000bc;
-    animation: slide-down 1s ease-in forwards;
-
-   @keyframes slide-down {
-        from{
-            height: 0px;
-        }
-        to{
-            height: 250px;
-        }
-   }
+    padding-bottom: 10px;
 `
 
 export const LinksListMobile = styled(LinksList)`
