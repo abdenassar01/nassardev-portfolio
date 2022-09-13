@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form"
 import { useRef, useState } from "react";
 import { redirect } from "@remix-run/node";
 import Alert from "~/components/alert/Alert";
+import Loading from "~/components/loading/Loading";
 
 type MessageInfo = {
     firstname: string,
@@ -21,16 +22,18 @@ function Contact() {
 
     const [ message, setMessage ] = useState("");
     const [ status, setStatus ] = useState(false);
+    const [ loading, setLoading ] = useState(false);
 
     const { register, handleSubmit, formState : { errors }, reset } = useForm<MessageInfo>() 
 
     const onSubmit = async (data: MessageInfo) => {
 
         try{
+            setLoading(true);
             const result = await emailjs.sendForm('service_y4us9ws', 'template_h2e012a', form.current, 'R0PBpUEVftaTfC7JX');
+            setLoading(false)
             setMessage("Thanks for Messaging us 😇");
             setStatus(true);
-
         }catch(e){
             setMessage("Something Went Worng. contact us directly on: abdenassaramimi@gmail.com");
             setStatus(false)       
@@ -46,6 +49,7 @@ function Contact() {
     
   return (
     <ContactWrapper>
+        <Loading isLoading={ loading } />
         <LeftSide>
             <Illustration>
                 <Blob />
