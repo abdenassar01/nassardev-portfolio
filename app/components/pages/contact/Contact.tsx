@@ -1,7 +1,12 @@
-import { useForm } from "react-hook-form"
 import { Field, Input, Label, Submit, TextArea } from "~/util"
 import Blob from "./blob/Blob"
 import { ContactWrapper, Illustration, LeftSide, RightSide, Raw, Form, SubmitField, ErrorMessage } from "./styles/Styles"
+
+import emailjs from '@emailjs/browser';
+import { useForm } from "react-hook-form"
+import { useRef, useState } from "react";
+import { redirect } from "@remix-run/node";
+import Alert from "~/components/alert/Alert";
 
 type MessageInfo = {
     firstname: string,
@@ -12,10 +17,25 @@ type MessageInfo = {
 
 function Contact() {
 
+    const form = useRef();
+
+    const [ message, setMessage ] = useState("");
+    const [ status, setStatus ] = useState(false);
+
     const { register, handleSubmit, formState : { errors }, reset } = useForm<MessageInfo>() 
 
-    const onSubmit = (data: MessageInfo) => {
-        console.log(data);
+    const onSubmit = async (data: MessageInfo) => {
+
+        try{
+            const result = await emailjs.sendForm('service_y4us9ws', 'template_h2e012a', form.current, 'R0PBpUEVftaTfC7JX');
+            setMessage("Thanks for Messaging us 😇");
+            setStatus(true);
+
+        }catch(e){
+            setMessage("Something Went Worng. contact us directly on: abdenassaramimi@gmail.com");
+            setStatus(false)       
+        }
+
         reset({
             firstname: "",
             lastname: "",
@@ -32,7 +52,8 @@ function Contact() {
             </Illustration>
         </LeftSide>
         <RightSide>
-            <Form onSubmit={ handleSubmit( onSubmit ) }>
+            <Alert message={ message } status={ status }  />
+            <Form ref={ form } onSubmit={ handleSubmit( onSubmit ) } >
                 <Raw>
                     <Field>
                         <Label htmlFor="firstname">{ errors.firstname ? <ErrorMessage>firstname is required. </ErrorMessage> : "Firstname:"  }</Label>
