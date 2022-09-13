@@ -48,14 +48,14 @@ function Navbar() {
                 <LinksListMobile>
                     {
                         ["home", "about", "projects", "tools"].map(item => (
-                            <ListItem key={ Math.random() * 1000 }>
+                            <ListItem key={ Math.random() * 1000 } onClick={ () => setExtended(false) }>
                                 <StyledNavLink to={ item === "home" ? "/" : item }>
                                     { item }
                                 </StyledNavLink>
                             </ListItem>
                         ))
                     }     
-                    <ContactLink to="/contact">contact</ContactLink>
+                    <ContactLink to="/contact" onClick={ () => setExtended(false) }>contact</ContactLink>
                 </LinksListMobile>
             </Nav>
             </ExtendedMenu>  

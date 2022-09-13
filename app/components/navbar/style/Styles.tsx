@@ -7,7 +7,9 @@ export const NavbarWrapper = styled.header`
     justify-content: space-between;
     padding: 10px 40px;
 
-    display: none; // TODO: to be removed
+    @media screen and ( max-width: 786px ){
+        display: none; 
+    }
 `
 
 export const LogoLink = styled(Link)`
@@ -33,17 +35,22 @@ export const LinksList = styled.ul`
 
 export const ListItem = styled.li`
     padding: 0 10px;
-    width: fit-content;
+   
+    @media screen and (max-width: 767px) {
+        padding: 5px;
+        
+       &:hover{
+            color: white;
+            background-color: #036afb9b;
+       }
+    }
 `
 
 export const StyledNavLink = styled(NavLink)`
     text-decoration: none;
     font-weight: 500;
     color: black;
-    
-    @media screen and (max-width: 767px) {
-      color: white;
-    }
+
     &[aria-current="page"] {
         background: -webkit-linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
         background-clip: text;
@@ -80,7 +87,7 @@ export const StyledNavLink = styled(NavLink)`
         color: black;
 
         @media screen and (max-width: 767px) {
-        color: white;
+            color: white;
         }
     }
 `
@@ -92,9 +99,15 @@ export const ContactLink = styled(Link)`
     padding: 5px 20px;
     border-radius: 50px;
     border: 2px solid ${ PrimaryColors["200"] } ;
+
+    @media screen and (max-width: 767px) {
+        width: fit-content;
+    }
 `
 
 export const MobileNavBar = styled(NavbarWrapper)`
+   display: none;
+
    @media screen and (max-width: 767px) {
     display: flex;
    }
@@ -114,7 +127,7 @@ export const ExtendedMenu = styled.div`
             height: 0px;
         }
         to{
-            height: 200px;
+            height: 250px;
         }
    }
 `
@@ -123,5 +136,4 @@ export const LinksListMobile = styled(LinksList)`
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    width: fit-content;
 `
