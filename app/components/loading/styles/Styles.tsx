@@ -9,6 +9,8 @@ export const LoadingWrapper = styled.div`
 
     display: grid;
     place-items: center;
+
+    background-color: #1818188d;
 `
 
 export const Spinner = styled.div`

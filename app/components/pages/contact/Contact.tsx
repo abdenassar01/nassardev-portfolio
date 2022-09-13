@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form"
 import { useRef, useState } from "react";
 import { redirect } from "@remix-run/node";
 import Alert from "~/components/alert/Alert";
+import Loading from "~/components/loading/Loading";
 
 type MessageInfo = {
     firstname: string,
@@ -21,6 +22,7 @@ function Contact() {
 
     const [ message, setMessage ] = useState("");
     const [ status, setStatus ] = useState(false);
+    const [ loading, setLoading ] = useState(true);
 
     const { register, handleSubmit, formState : { errors }, reset } = useForm<MessageInfo>() 
 
@@ -46,6 +48,7 @@ function Contact() {
     
   return (
     <ContactWrapper>
+        <Loading isLoading={ loading } />
         <LeftSide>
             <Illustration>
                 <Blob />
