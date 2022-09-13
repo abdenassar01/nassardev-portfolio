@@ -30,7 +30,7 @@ function Contact() {
             const result = await emailjs.sendForm('service_y4us9ws', 'template_h2e012a', form.current, 'R0PBpUEVftaTfC7JX');
             setMessage("Thanks for Messaging us 😇");
             setStatus(true);
-
+            
         }catch(e){
             setMessage("Something Went Worng. contact us directly on: abdenassaramimi@gmail.com");
             setStatus(false)       
