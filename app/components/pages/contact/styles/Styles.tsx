@@ -47,3 +47,9 @@ export const SubmitField = styled.div`
     display: flex;
     justify-content: flex-end;
 `
+
+export const ErrorMessage = styled.span`
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff0062;
+`

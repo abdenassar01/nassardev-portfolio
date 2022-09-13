@@ -17,8 +17,8 @@ export const Field = styled.div`
 export const Label = styled.label`
     font-size: 10px;
     font-weight: bold;
-    color: #A4A4A4;
     margin-top: 5px;
+    color: #A4A4A4;
     margin-left: 5px;
 `
 

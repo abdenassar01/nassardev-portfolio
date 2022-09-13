@@ -7,3 +7,8 @@ function index() {
 }
 
 export default index
+
+export async function action({ request }: any) {
+  const body = await request.formData();
+  console.log(body)
+}
