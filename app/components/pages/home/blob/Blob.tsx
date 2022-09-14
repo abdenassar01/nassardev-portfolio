@@ -2,7 +2,11 @@ import { motion } from "framer-motion";
 
 function Blob() {
   return (
-      <motion.svg animate={{ opacity: 1, scale: 1 }} initial={{ opacity: 0, scale: 0 }}  width="641" height="500" viewBox="0 0 641 500" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+      <motion.svg 
+        animate={{ opacity: 1, scale: 1 }} 
+        initial={{ opacity: 0, scale: 0 }} 
+        exit={{ opacity: 0, scale: 0.3 }}
+         width="641" height="500" viewBox="0 0 641 500" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <g clipPath="url(#clip0_2_49)">
         <path d="M532.151 61.0505C602.064 110.479 643.271 197.489 636.789 278.372C629.844 359.664 575.21 434.828 505.297 454.436C435.384 474.044 350.192 438.504 253.425 448.308C157.121 458.521 48.779 514.485 14.517 494.877C-19.745 475.269 19.147 379.68 26.555 291.036C33.963 201.983 8.96098 119.466 43.223 69.629C77.948 20.2005 171.474 3.45199 267.315 1.40949C363.619 -1.04151 462.238 11.2135 532.151 61.0505Z" fill="#036AFB"/>
         <rect x="1.0849" y="0.792366" width="639.114" height="491.37" fill="url(#pattern0)"/>

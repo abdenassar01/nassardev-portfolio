@@ -4,7 +4,7 @@ import { Section, P, Wrapper, ButtonsWrapper } from "./styles/Styles"
 
 function Greeting() {
   return (
-    <motion.div animate={{x: 0}} initial={{x: -500}}>
+    <motion.div animate={{x: 0}} initial={{x: -500}} exit={{ x: -200, opacity: 0 }}>
       <Wrapper>
         <Section>
               Hi 👋 I'm
