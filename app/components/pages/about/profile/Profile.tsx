@@ -6,9 +6,18 @@ import { motion } from "framer-motion";
 function Profile() {
   return (
     <Section>
-      <Header>
+      <Header 
+        initial={{ opacity: 0 }}
+        transition={{ type: "spring", duration: 0.5, stiffness: 100, bounce: 10 }} 
+        whileInView={{ opacity: 1 }}
+        >
         <MainInfo>
-          <Image src="https://i.imgur.com/t8Z6gHr.png" alt="ABDENASSAR AMIMI" />
+          <Image
+            initial={{ scale: 0, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            whileHover={{ scale: 2.5 }}
+            transition={{ type: "spring", duration: 0.5, stiffness: 100, bounce: 10 }} 
+            src="https://i.imgur.com/t8Z6gHr.png" alt="ABDENASSAR AMIMI" />
           <NameHeading>ABDENASSAR AMIMI</NameHeading>
           <SocialMediaLinks>
             <A href="https://github.com/abdenassar01" target="_blank">

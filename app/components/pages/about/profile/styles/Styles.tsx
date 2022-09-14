@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { PrimaryColors } from "~/util";
 
@@ -5,7 +6,7 @@ export const Section = styled.section`
 
 `
 
-export const Header = styled.div`
+export const Header = styled(motion.div)`
     background: linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
     width: 100%;
     height: 60px;
@@ -22,7 +23,7 @@ export const MainInfo = styled.div`
     place-items: center;
 `
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
     width: 60px;
     height: 60px;
     border-radius: 50%;

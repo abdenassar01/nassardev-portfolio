@@ -3,7 +3,11 @@ import { Paragraph, Wrapper } from './styles/Styles'
 
 function Text() {
   return (
-    <Wrapper>
+    <Wrapper
+      initial={{ x: -300, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ type: "spring", duration: 0.5, stiffness: 100, bounce: 10 }} 
+    >
         <Heading>Hey, I'm Abdenassar Amimi</Heading>
         <SecondaryHeading>FullStack Web Developer from Morocco</SecondaryHeading>
         <Paragraph>
