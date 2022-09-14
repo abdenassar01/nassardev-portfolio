@@ -1,4 +1,5 @@
 import { Link, NavLink } from "@remix-run/react";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { PrimaryColors } from "~/util";
 
@@ -113,7 +114,7 @@ export const MobileNavBar = styled(NavbarWrapper)`
    }
 `
 
-export const ExtendedMenu = styled.div`
+export const ExtendedMenu = styled(motion.div)`
     width: 100vw;
     position: absolute;
     z-index: 1000;

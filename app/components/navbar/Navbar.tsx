@@ -43,7 +43,7 @@ function Navbar() {
             <GiHamburgerMenu size={ 35 } color="#00b9ff" onClick={ ToggleExtendedMenu } />
            {
             isExtended && 
-            <ExtendedMenu>
+            <ExtendedMenu initial={{ height:0 }} animate={{ height: 250 }} transition={{ type: "spring", stiffness: 100, bounce: 10, duration: 1 }} >
                  <Nav>
                 <LinksListMobile>
                     {
