@@ -1,6 +1,8 @@
 import { AiFillDribbbleCircle, AiFillFacebook, AiFillGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineInstagram } from "react-icons/ai"
 import { A, Header, Image, MainInfo, NameHeading, Section, SocialMediaLinks } from "./styles/Styles"
 
+import { motion } from "framer-motion";
+
 function Profile() {
   return (
     <Section>
