@@ -8,10 +8,10 @@ function Projects() {
 
   return (
     <ProjectsWrapper> 
-      <motion.div initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ type:"spring", delay: 0.3, damping: 20, stiffness: 50 }} >
+      <motion.div initial={{ x: -250 }} whileInView={{ x: 0 }} transition={{ type:"spring" }} >
         <MainTitle>Projects</MainTitle>
         <Paragraph>
-          Everything I do is open source and for the comunity, feel free to see code on my github account. I well apreciate your collaboration on my projects😉.
+          Everything I do is open source and for the comunity, feel free to see code on my github account. <br /> I well apreciate your collaboration on my projects😉.
         </Paragraph>
       </motion.div>
       {
