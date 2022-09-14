@@ -1,6 +1,7 @@
-import { Avatar, Image, ItemEllement, ItemWrapper, LanguagesWrapper, Paragraph, ProjectTitle, TechLink, TechnologiesWrapper, Technology, TechTitle } from "./styles/Styles"
+import { Avatar, ButtonsWrapper, CodeButton, DemoButton, Image, ItemEllement, ItemWrapper, LanguagesWrapper, Paragraph, ProjectTitle, TechLink, TechnologiesWrapper, Technology, TechTitle } from "./styles/Styles"
 
 import { ProjectProps } from "../../../../assets/data"
+import { FaFirefoxBrowser, FaFileCode } from "react-icons/fa"
 
 function Item(props: ProjectProps) {
   return (
@@ -32,8 +33,12 @@ function Item(props: ProjectProps) {
                     ))
                 }    
             </LanguagesWrapper>
+            <ButtonsWrapper>
+                <CodeButton href={ props.code } color="white" target="_blank">code <FaFileCode /> </CodeButton>
+                <DemoButton href={ props.demo } color="#036afb" target="_blank">demo <FaFirefoxBrowser /> </DemoButton>
+            </ButtonsWrapper>
         </ItemEllement>
-        <Image src="https://i.imgur.com/Wx9gCVq.jpg" alt="casawe-guichet" />
+        <Image src={ props.image } alt={ props.title } loading="lazy" />
     </ItemWrapper>
   )
 }

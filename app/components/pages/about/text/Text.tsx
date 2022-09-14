@@ -1,4 +1,3 @@
-import React from 'react'
 import { Heading, SecondaryHeading } from '../shared/Styles'
 import { Paragraph, Wrapper } from './styles/Styles'
 
@@ -8,13 +7,13 @@ function Text() {
         <Heading>Hey, I'm Abdenassar Amimi</Heading>
         <SecondaryHeading>FullStack Web Developer from Morocco</SecondaryHeading>
         <Paragraph>
-            As a professional software developer, I create amazing scalable web applications app to make the internet a better place. I am an advocate for a decentralized internet, with major interest in the FinTech and DeFi space. Enthusiast with experience in production level technologies.
+          Hard-working listing programmer with a flair for creating elegant solutions in the least amount of time. As a student developer, created a lot of side projects to improve upon the skills I gained from school and develop new ones on my own. 
         </Paragraph>
         <Paragraph>
-          I am 26 years old and have been a professional web developer for about 5 years now. The technologies I work with are JavaScript, Python and Solidity with a focus on Django, React.js, Next.js, Node and Express. I use code not only to do my day-to-day job, but also to contribute to open-source projects in the web3 space.
+          I'm a 21 years old full stack developer based in morocco. my intrest is in efficenty and making my code as clean as possible, as maintanable as possible to be able to work on large projects with a big teams very easily. I'm motivated to learn more in the programming field.
         </Paragraph>
         <Paragraph>
-            When I am not writing code I love to spend time with my family and friends in Lagos. I hang around a couple of DAOs on Discord and actively contribute to the MoonShot Collective work-stream of GitcoinDAO and I love to read fiction and non-fiction books, watch sci-fi movies and play games on my playstation console.
+          Looking to use my programming skills to help solve tech related problems and provide solutions that suits clients needs. 
         </Paragraph>
     </Wrapper>
   )

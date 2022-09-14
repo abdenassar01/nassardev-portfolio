@@ -5,7 +5,7 @@ import { useState } from "react";
  
 function Navbar() {
 
-    const [ isExtended, setExtended ] = useState(true);
+    const [ isExtended, setExtended ] = useState(false);
 
     const ToggleExtendedMenu = () => {
         setExtended(!isExtended);
