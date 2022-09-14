@@ -9,7 +9,7 @@ export const ItemWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 10px;
-
+    gap: 10px;
     background: #f1f1f1;
 
     &:nth-child(2n){
@@ -85,4 +85,74 @@ export const TechLink = styled.a`
     font-weight: bold;
     text-decoration: none;
     color: ${ props => props.color && props.color };
+`
+
+export const ButtonsWrapper = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+const Button = styled.a`
+    text-decoration: none;
+    color: ${ props => props.color ? props.color : "black" };
+    padding: 5px 42px;
+
+    &:visited{
+        color: ${ props => props.color ? props.color : "black" };
+    }
+
+    @media screen  and (max-width: 667px){
+        font-size: 14px;
+    }
+`
+
+export const CodeButton = styled(Button)`
+    background: linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
+    border-radius: 50px;
+    font-weight: bold;
+    object-fit: contain;
+
+    &:hover{
+        background: linear-gradient(30deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
+    }
+`
+
+export const DemoButton = styled(Button)`
+    font-weight: bold;
+    display: block;
+    width: fit-content;
+    background: -webkit-linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: all;
+
+    &::after{
+        content: "";
+        display: block;
+        border-radius: 50px;
+        background: transparent;
+        height: 3px;
+    }
+
+    &:hover{
+       cursor: pointer;
+
+        &::after{
+            content: "";
+            display: block;
+            border-radius: 50px;
+            background: linear-gradient(90deg, ${ PrimaryColors["100"] } 10%, ${ PrimaryColors["200"] } 100%);
+            height: 3px;
+            animation: slide .3s forwards;
+        }
+        @keyframes slide {
+            from{
+                width: 0%;
+            }
+            to{
+                width: 110%;
+            }
+        }
+    }
 `
