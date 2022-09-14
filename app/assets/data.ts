@@ -33,7 +33,7 @@ export type ProjectProps = {
     title: string,
     disc: string[],
     code: string,
-    demo?: string,
+    demo: string,
     image: string,
     techStack: Tech[],
     prglsngs: ProgLang[]
@@ -169,9 +169,9 @@ export const PROJECTS: ProjectProps[] = [
             "Online ticketing platform for tickets and Sport Ticketing for sports events.",
             "This application is part of the guichet.ma platform which is a web application and mobile application for online ticket booking."
         ],
-        code: "https://github.com",
-        demo: "https://caswe-guichet.vercel.app",
-        image: "",
+        code: "https://github.com/abdenassar01/casawe-guichet",
+        demo: "https://casawe-guichet.vercel.app/",
+        image: "https://i.imgur.com/523rzab.png",
         techStack:[ 
             _react, _guichetApi
         ],
@@ -187,11 +187,11 @@ export const PROJECTS: ProjectProps[] = [
         title: "Shoppily",
         disc: [
             "Fullstack ecommerce web application built with spring boot, mysql and react.",
-            "This application is part of the guichet.ma platform which is a web application and mobile application for online ticket booking."
+            "This application was built in my final year's project in my BTS degree. It aims to make shopping online easy and smouth(Not Working for know)."
         ],
-        code: "https://github.com",
-        demo: "https://caswe-guichet.vercel.app",
-        image: "",
+        code: "https://github.com/abdenassar01/Shoppily",
+        demo: "https://shoppily.vercel.app",
+        image: "https://i.imgur.com/KjZBOHV.png",
         techStack:[ 
             _react, _springboot, _mysql
         ],
@@ -211,12 +211,12 @@ export const PROJECTS: ProjectProps[] = [
     {
         title: "muslim",
         disc: [
-            "Online ticketing platform for tickets and Sport Ticketing for sports events.",
-            "This application is part of the guichet.ma platform which is a web application and mobile application for online ticket booking."
+            "Alkuran alkareem in your packet. Mobile application for azkar and alQuran Alkareem.",
+            "This application can help you to read alkuran whenever you are. It's provide alquran alkareem complete in addition to evening, morning and roqya doae and there is more features comming soon..."
         ],
-        code: "https://github.com",
-        demo: "https://caswe-guichet.vercel.app",
-        image: "",
+        code: "https://github.com/abdenassar01/muslim",
+        demo: "https://nassardev.me",
+        image: "https://i.imgur.com/Fr7ff2v.png",
         techStack:[ 
             _remix, _quranApi
         ],
@@ -231,12 +231,12 @@ export const PROJECTS: ProjectProps[] = [
     {
         title: "muslimweb",
         disc: [
-            "Online ticketing platform for tickets and Sport Ticketing for sports events.",
-            "This application is part of the guichet.ma platform which is a web application and mobile application for online ticket booking."
+            "Web interface for alquran alkareem reading and listening.",
+            "This application is a web application for quran alkareem, you can read alkuran as text or listen to it as an audio. this app is relying on external API's."
         ],
-        code: "https://github.com",
-        demo: "https://caswe-guichet.vercel.app",
-        image: "",
+        code: "https://github.com/abdenassar01/quran",
+        demo: "https://muslimweb.vercel.app",
+        image: "https://i.imgur.com/hvcKZBc.png",
         techStack:[ 
             _remix, _quranApi
         ],
