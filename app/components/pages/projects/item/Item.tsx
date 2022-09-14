@@ -5,7 +5,7 @@ import { FaFirefoxBrowser, FaFileCode } from "react-icons/fa"
 
 function Item(props: ProjectProps) {
   return (
-    <ItemWrapper initial={{ x: -1305 }} whileInView={{ x: 0 }} transition={{ type: "spring", stiffness: 100, delay: 0.3 }} >
+    <ItemWrapper initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ type: "spring", stiffness: 50, delay: 0.3 }} >
         <ItemEllement>
             <ProjectTitle>{ props.title }</ProjectTitle>
             {
