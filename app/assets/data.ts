@@ -81,17 +81,17 @@ export const EXPERIENCES: PropType = {
 
 export const TOOLS: ItemProp[] = [
     {
-        avatar: "https://i.imgur.com/4vegS9z.jpg",
+        avatar: "https://i.imgur.com/vDD6kpS.png",
         toolsName: "intellij idea",
         disc: "IntelliJ - I use this fully fanctional ide for java developement(Spring boot, jakarta ee...). "
     },
     {
-        avatar: "https://i.imgur.com/YUUYsiX.png",
+        avatar: "https://i.imgur.com/oysyNIt.png",
         toolsName: "VS Code",
         disc: "VS Code - I use visual studio editor for writing javascript/Typescript code(React, React Native, Remix). "
     },
     {
-        avatar: "https://i.imgur.com/dAJliqz.png",
+        avatar: "https://i.imgur.com/cm7fUBM.png",
         toolsName: "Vim",
         disc: "Vim - Vim is an essential tool in my tools list for editing simple scripts, configurations files and simple c labs. "
     }
@@ -142,7 +142,7 @@ const _remix = {
 }
 
 const _mysql = {
-    avatar: "https://i.imgur.com/UbS9HpS.png",
+    avatar: "https://i.imgur.com/OGeDQwy.png",
     title: "MySQL",
     color: "#00618A",
     link: "https://mysql.com"
@@ -156,7 +156,7 @@ const _guichetApi = {
 }
 
 const _quranApi = {
-    avatar: "https://i.imgur.com/d4uccE9.png",
+    avatar: "https://i.imgur.com/JXrwXo2.png",
     title: "Quran API",
     color: "#112E44",
     link: "https://api.quran.com"
