@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const ContactWrapper = styled.main`
@@ -19,7 +20,7 @@ export const LeftSide = styled.section`
     }
 `
 
-export const RightSide = styled.section`
+export const RightSide = styled(motion.section)`
     
     @media screen and (max-width: 667px) {
         width: 100%;

@@ -5,7 +5,7 @@ import { FaFirefoxBrowser, FaFileCode } from "react-icons/fa"
 
 function Item(props: ProjectProps) {
   return (
-    <ItemWrapper>
+    <ItemWrapper initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ type: "spring", stiffness: 50, delay: 0.3 }} >
         <ItemEllement>
             <ProjectTitle>{ props.title }</ProjectTitle>
             {
@@ -34,11 +34,11 @@ function Item(props: ProjectProps) {
                 }    
             </LanguagesWrapper>
             <ButtonsWrapper>
-                <CodeButton href={ props.code } color="white" target="_blank">code <FaFileCode /> </CodeButton>
+                <CodeButton href={ props.code } color="white" target="_blank" whileHover={{ scale: 1.1 }}>code <FaFileCode /> </CodeButton>
                 <DemoButton href={ props.demo } color="#036afb" target="_blank">demo <FaFirefoxBrowser /> </DemoButton>
             </ButtonsWrapper>
         </ItemEllement>
-        <Image src={ props.image } alt={ props.title } loading="lazy" />
+        <Image src={ props.image } alt={ props.title } loading="lazy"  whileHover={{ scale: 1.1, y: -20 }} />
     </ItemWrapper>
   )
 }

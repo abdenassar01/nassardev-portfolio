@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 
-export const CentredWrapper = styled.main`
+export const CentredWrapper = styled(motion.main)`
     display: flex;
     justify-content: center;
     min-height: 83vh;

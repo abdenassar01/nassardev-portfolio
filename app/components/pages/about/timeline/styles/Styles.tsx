@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { PrimaryColors } from "~/util";
 
@@ -31,12 +32,12 @@ export const Line = styled.div`
     margin-top: 100px;
 `
 
-export const EventList = styled.div`
+export const EventList = styled(motion.div)`
     display: flex;
     justify-content: space-around;
 `
 
-export const Event = styled.div`
+export const Event = styled(motion.div)`
     display: flex;
     align-items: center;
     flex-direction: column;

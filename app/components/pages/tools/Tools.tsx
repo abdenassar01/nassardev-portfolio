@@ -5,7 +5,11 @@ import { CentredWrapper, Paragraph, Wrapper } from './styles/Styles'
 
 function Tools() {
   return (
-    <CentredWrapper>
+    <CentredWrapper
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{ type: "spring", stiffness: 100 }}
+    >
       <Wrapper>
         <MainTitle>Tools</MainTitle>
         <Paragraph>

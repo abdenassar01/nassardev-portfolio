@@ -18,6 +18,27 @@ type PropType = {
 }
 
 function Timeline(props: PropType) {
+
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2
+          }
+        }
+      };
+      
+      const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1
+        }
+      };
+
   return (
     <Wrapper>
         <Heading>{ props?.data.heading }</Heading>
@@ -26,16 +47,23 @@ function Timeline(props: PropType) {
         </HelperText>
         <TimelineWrapper>
             <Line />
-            <EventList>
+            <EventList 
+                variants={container}
+                initial="hidden"
+                animate="visible"
+                transition={{ type: "spring", stiffness: 100 }}
+            >
                 {
-                    props?.data.events.map(ele => 
-                   ( <Event key={ Math.random() }>
-                        <Paragraph>{ ele?.degree }</Paragraph>
-                        <SubTitle>{ ele.title }</SubTitle>
-                        <Text>{ ele.dateRange }</Text>
-                        <Pin />
-                    </Event>)
-                    )
+                    props?.data.events.map(ele =>  ( 
+                        <Event key={ Math.random() }  
+                            variants={item} 
+                        >
+                            <Paragraph>{ ele?.degree }</Paragraph>
+                            <SubTitle>{ ele.title }</SubTitle>
+                            <Text>{ ele.dateRange }</Text>
+                            <Pin />
+                        </Event>
+                    ))
                 }
             </EventList>    
         </TimelineWrapper>

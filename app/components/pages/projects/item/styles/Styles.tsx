@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { PrimaryColors } from "~/util";
 
-export const ItemWrapper = styled.div`
+export const ItemWrapper = styled(motion.div)`
     margin: 20px 0;
     padding: 10px 20px;
 
@@ -50,7 +51,7 @@ export const Paragraph = styled.p`
     }
 `
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
     width: 43%;
     height: auto;
     border-radius: 10px;
@@ -92,7 +93,7 @@ export const ButtonsWrapper = styled.div`
     align-items: center;
 `
 
-const Button = styled.a`
+const Button = styled(motion.a)`
     text-decoration: none;
     color: ${ props => props.color ? props.color : "black" };
     padding: 5px 42px;
