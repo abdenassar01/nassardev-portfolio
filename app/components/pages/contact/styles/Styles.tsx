@@ -52,5 +52,8 @@ export const SubmitField = styled.div`
 export const ErrorMessage = styled.span`
     font-size: 12px;
     font-weight: bold;
-    color: #ff0062;
+    color: #ffffff;
+    background-color: #ff0644;
+    padding: 2px 5px;
+    border-radius: 5px;
 `
