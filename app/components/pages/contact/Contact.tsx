@@ -63,16 +63,37 @@ function Contact() {
             <Form ref={ form } onSubmit={ handleSubmit( onSubmit ) } >
                 <Raw>
                     <Field>
-                        <Label htmlFor="firstname">{ errors.firstname ? <ErrorMessage>firstname is required. </ErrorMessage> : "Firstname:"  }</Label>
+                        <Label htmlFor="firstname">
+							{ 
+								errors.firstname ? <ErrorMessage>firstname is required. </ErrorMessage> : "Firstname:"  
+							}
+						</Label>
                         <Input type="text" id="firstname" { ...register("firstname", { required: true })} />
                     </Field>                    
                     <Field>
-                        <Label htmlFor="lastname" >{ errors.lastname ? <ErrorMessage>lastname is required. </ErrorMessage> : "Lastname:"  } </Label>
+                        <Label htmlFor="lastname" >
+							{ 
+								errors.lastname ? <ErrorMessage>lastname is required. </ErrorMessage> : "Lastname:" 
+							 } 
+						</Label>
                         <Input type="text" id="lastname" { ...register("lastname", { required: true })} />
                     </Field>
                 </Raw>  
                 <Field>
-                    <Label htmlFor="mail" >{ errors.mail ? <ErrorMessage>{(errors.mail?.type === 'required') && "mail is required." || ( errors.mail?.message ) }</ErrorMessage> : "E-mail:"  } </Label>
+                    <Label 
+						htmlFor="mail" >
+							{ errors.mail ?
+									<ErrorMessage>
+										{
+											(errors.mail?.type === 'required') && 
+														"mail is required." || 
+															( errors.mail?.message ) 
+										}
+									</ErrorMessage> 
+									:
+								 "E-mail:"  
+							} 
+					</Label>
                     <Input type="mail" id="mail" { ...register("mail", { required: true, 
                         pattern: {
                                 value: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
@@ -80,7 +101,12 @@ function Contact() {
                             }})} />
                 </Field>                    
                 <Field>
-                    <Label htmlFor="message" >{ errors.message ? <ErrorMessage>message is required. </ErrorMessage> : "Message:"  }</Label>
+                    <Label htmlFor="message" >
+						{ errors.message ? 
+							<ErrorMessage>message is required. </ErrorMessage> 
+							: "Message:"  
+						}
+					</Label>
                     <TextArea id="message" rows={ 8 } { ...register("message", { required: true })} />
                 </Field>     
                 <SubmitField>
