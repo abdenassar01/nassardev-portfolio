@@ -11,16 +11,16 @@ function Footer() {
         </Left>
         <Right>
           <SocialMedia>
-            <StyledLink href="https://github.com" target="_blank" color="#171515">
+            <StyledLink href="https://github.com/abdenassar01" target="_blank" color="#171515">
               <AiFillGithub size={ 26 } />
             </StyledLink> 
-            <StyledLink href="https://linkedin.com" target="_blank" color="#0077B5">
+            <StyledLink href="https://linkedin.com/in/abdenassar01" target="_blank" color="#0077B5">
               <AiFillLinkedin size={ 26 } />
             </StyledLink> 
-            <StyledLink href="https://instagram.com" target="_blank" color="#C13584">
+            <StyledLink href="https://instagram.com/nassardev" target="_blank" color="#C13584">
               <AiOutlineInstagram size={ 26 } />
             </StyledLink> 
-            <StyledLink href="https://twitter.com" target="_blank" color="#1D9BF0">
+            <StyledLink href="https://twitter.com/abdenassar01" target="_blank" color="#1D9BF0">
               <AiFillTwitterCircle size={ 26 } />
             </StyledLink>
           </SocialMedia>
