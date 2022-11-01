@@ -9,7 +9,7 @@ function Text() {
       transition={{ type: "spring", duration: 0.5, stiffness: 100, bounce: 10 }} 
     >
         <Heading>Hey, I'm Abdenassar Amimi</Heading>
-        <SecondaryHeading>FullStack Web Developer from Morocco</SecondaryHeading>
+        <SecondaryHeading>FullStack Web Developer from Morocco 👨‍💻🇲🇦 </SecondaryHeading>
         <Paragraph>
           Hard-working listing programmer with a flair for creating elegant solutions in the least amount of time. As a student developer, created a lot of side projects to improve upon the skills I gained from school and develop new ones on my own. 
         </Paragraph>
