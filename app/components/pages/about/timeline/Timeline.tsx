@@ -50,7 +50,7 @@ function Timeline(props: PropType) {
             <EventList 
                 variants={container}
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
                 transition={{ type: "spring", stiffness: 100 }}
             >
                 {
