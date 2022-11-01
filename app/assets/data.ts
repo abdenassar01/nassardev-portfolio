@@ -54,6 +54,11 @@ export const EDUCATION: PropType = {
             title: "Development of Information Systems(DSI)"
         },
         {
+            dateRange: "2022-Now",
+            degree: "Professional licence in ENS",
+            title: "Web Software and Development"
+        },
+        {
             title: "never stop learning"
         }, 
     ]
