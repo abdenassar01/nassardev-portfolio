@@ -167,6 +167,13 @@ const _quranApi = {
     link: "https://api.quran.com"
 }
 
+const _reactNative = {
+    avatar: "https://i.imgur.com/cWDVsJ8.png",
+    title: "React Native",
+    color: "#14d3f5",
+    link: "https://reactnative.dev"
+}
+
 export const PROJECTS: ProjectProps[] = [
     {
         title: "casawe-guichet",
@@ -179,6 +186,26 @@ export const PROJECTS: ProjectProps[] = [
         image: "https://i.imgur.com/523rzab.png",
         techStack:[ 
             _react, _guichetApi
+        ],
+        prglsngs: [
+            {
+                avatar: "https://i.imgur.com/FMQhTrh.png",
+                link: "https://javascript.com",
+                name: "JavaScript"
+            }
+        ]
+    },
+    {
+        title: "Lkora",
+        disc: [
+            "Cross Platform Mobile app built with react Native.",
+            "This application gives data about football events and gives fixtures to next comming matches, show board standing for the most known tournomants, best player of the week and more..."
+        ],
+        code: "https://github.com/abdenassar01/lkora",
+        demo: "https://github.com/abdenassar01/lkora/release",
+        image: "https://i.imgur.com/523rzab.png",
+        techStack:[ 
+            _reactNative
         ],
         prglsngs: [
             {
@@ -220,10 +247,10 @@ export const PROJECTS: ProjectProps[] = [
             "This application can help you to read alkuran whenever you are. It's provide alquran alkareem complete in addition to evening, morning and roqya doae and there is more features comming soon..."
         ],
         code: "https://github.com/abdenassar01/muslim",
-        demo: "https://nassardev.me",
+        demo: "https://github.com/abdenassar01/muslim/release",
         image: "https://i.imgur.com/Fr7ff2v.png",
         techStack:[ 
-            _remix, _quranApi
+            _reactNative, _quranApi
         ],
         prglsngs: [
             {
