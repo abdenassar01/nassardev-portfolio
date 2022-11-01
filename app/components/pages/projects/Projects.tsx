@@ -11,7 +11,7 @@ function Projects() {
       <motion.div initial={{ x: -250 }} whileInView={{ x: 0 }} transition={{ type:"spring" }} >
         <MainTitle>Projects</MainTitle>
         <Paragraph>
-          Everything I do is open source and for the comunity, feel free to see code on my github account. <br /> I well apreciate your collaboration on my projects😉.
+          Everything I do is open source and for the comunity, feel free to see code on my github account. <br /> I will apreciate your collaboration on my projects😉.
         </Paragraph>
       </motion.div>
       {
