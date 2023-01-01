@@ -1,0 +1,162 @@
+[
+  {
+    "title": "casawe-guichet",
+    "disc": [
+      "Online ticketing platform for tickets and Sport Ticketing for sports events.",
+      "This application is part of the guichet.ma platform which is a web application and mobile application for online ticket booking."
+    ],
+    "code": "https://github.com/abdenassar01/casawe-guichet",
+    "demo": "https://casawe-guichet.vercel.app/",
+    "image": "https://i.imgur.com/523rzab.png",
+    "techStack":[
+      {
+        "avatar": "https://i.imgur.com/cWDVsJ8.png",
+        "title": "React",
+        "color": "#14d3f5",
+        "link": "React.com"
+      },
+      {
+        "avatar": "https://i.imgur.com/SffvoZe.png",
+        "title": "Guichet API",
+        "color": "#0A1D38",
+        "link": "https://guichet.com"
+      }
+    ],
+    "prglsngs": [
+      {
+        "avatar": "https://i.imgur.com/FMQhTrh.png",
+        "link": "https://javascript.com",
+        "name": "JavaScript"
+      }
+    ]
+  },
+  {
+    "title": "Lkora",
+    "disc": [
+      "Cross Platform Mobile app built with react Native.",
+      "This application gives data about football events and gives fixtures to next coming matches, show board standing for the most known tournaments, best player of the week and more..."
+    ],
+    "code": "https://github.com/abdenassar01/lkora",
+    "demo": "https://github.com/abdenassar01/lkora/release",
+    "image": "https://i.imgur.com/styiZ6B.png",
+    "techStack":[
+      {
+        "avatar": "https://i.imgur.com/cWDVsJ8.png",
+        "title": "React Native",
+        "color": "#14d3f5",
+        "link": "https://reactnative.dev"
+      }
+    ],
+    "prglsngs": [
+      {
+        "avatar": "https://i.imgur.com/OlAGikT.png",
+        "link": "https://www.typescriptlang.org/",
+        "name": "TypeScript"
+      }
+    ]
+  },
+  {
+    "title": "Shoppily",
+    "disc": [
+      "Fullstack ecommerce web application built with spring boot, mysql and react.",
+      "This application was built in my final year's project in my BTS degree. It aims to make shopping online easy and smouth(Not Working for know)."
+    ],
+    "code": "https://github.com/abdenassar01/Shoppily",
+    "demo": "https://shoppily.vercel.app",
+    "image": "https://i.imgur.com/KjZBOHV.png",
+    "techStack":[
+      {
+        "avatar": "https://i.imgur.com/cWDVsJ8.png",
+        "title": "React",
+        "color": "#14d3f5",
+        "link": "React.com"
+      },
+      {
+        "avatar": "https://i.imgur.com/jKcCIu4.png",
+        "title": "Spring Boot",
+        "color": "#8BC34A",
+        "link": "https://spring.io"
+      },
+      {
+        "avatar": "https://i.imgur.com/OGeDQwy.png",
+        "title": "MySQL",
+        "color": "#00618A",
+        "link": "https://mysql.com"
+      }
+    ],
+    "prglsngs": [
+      {
+        "avatar": "https://i.imgur.com/4oHqGO1.png",
+        "link": "https://java.com",
+        "name": "Java"
+      },
+      {
+        "avatar": "https://i.imgur.com/FMQhTrh.png",
+        "link": "https://javascript.com",
+        "name": "JavaScript"
+      }
+    ]
+  },
+  {
+    "title": "muslim",
+    "disc": [
+      "Alkuran alkareem in your packet. Mobile application for azkar and alQuran Alkareem.",
+      "This application can help you to read alkuran whenever you are. It's provide alquran alkareem complete in addition to evening, morning and roqya doae and there is more features comming soon..."
+    ],
+    "code": "https://github.com/abdenassar01/muslim",
+    "demo": "https://github.com/abdenassar01/muslim/release",
+    "image": "https://i.imgur.com/Fr7ff2v.png",
+    "techStack":[
+      {
+        "avatar": "https://i.imgur.com/cWDVsJ8.png",
+        "title": "React Native",
+        "color": "#14d3f5",
+        "link": "https://reactnative.dev"
+      },
+      {
+        "avatar": "https://i.imgur.com/JXrwXo2.png",
+        "title": "Quran API",
+        "color": "#112E44",
+        "link": "https://api.quran.com"
+      }
+    ],
+    "prglsngs": [
+      {
+        "avatar": "https://i.imgur.com/OlAGikT.png",
+        "link": "https://www.typescriptlang.org/",
+        "name": "TypeScript"
+      }
+    ]
+  },
+  {
+    "title": "muslimweb(Suspended)",
+    "disc": [
+      "Web interface for alquran alkareem reading and listening.",
+      "This application is a web application for quran alkareem, you can read alkuran as text or listen to it as an audio. this app is relying on external API's."
+    ],
+    "code": "https://github.com/abdenassar01/quran",
+    "demo": "https://muslimweb.vercel.app",
+    "image": "https://i.imgur.com/hvcKZBc.png",
+    "techStack":[
+      {
+        "avatar": "https://i.imgur.com/jtFkiPX.jpg",
+        "title": "Remix",
+        "color": "#2C5689",
+        "link": "https://remix.com"
+      },
+      {
+        "avatar": "https://i.imgur.com/JXrwXo2.png",
+        "title": "Quran API",
+        "color": "#112E44",
+        "link": "https://api.quran.com"
+      }
+    ],
+    "prglsngs": [
+      {
+        "avatar": "https://i.imgur.com/OlAGikT.png",
+        "link": "https://www.typescriptlang.org/",
+        "name": "TypeScript"
+      }
+    ]
+  }
+]
